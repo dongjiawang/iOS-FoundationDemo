@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AttachmentViewController.nib</key>
+		<data>
+		aFSeczGx/yGNUbu1xCgyRyBEfrw=
+		</data>
 		<key>CollisionViewController.nib</key>
 		<data>
 		humH9PBEhEtTGle6K+I/R+ONtyo=
@@ -16,6 +20,14 @@
 		<data>
 		n9tcoiT8hnLcp0yXJXvPNxeY3ek=
 		</data>
+		<key>PushViewController.nib</key>
+		<data>
+		53AOxNGUH4bolMvGjJz+ZLd2QZ8=
+		</data>
+		<key>SnapViewController.nib</key>
+		<data>
+		ty/ECcaxq4pZ9jKDcjy2uZAlfic=
+		</data>
 		<key>UIKitDynamicsViewController.nib</key>
 		<data>
 		1OFqedx0PayJTsDlOU50Unwui44=
@@ -23,6 +35,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AttachmentViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PrTIqHNyl5ZWR3gG1G1G23PJaUdYcUz2I4dwmbj74pE=
+			</data>
+		</dict>
 		<key>CollisionViewController.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -35,6 +54,20 @@
 			<key>hash2</key>
 			<data>
 			u/N0qzJWNKu196YScnbgbzmtdy8oNIDhkWztsggZm1k=
+			</data>
+		</dict>
+		<key>PushViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Co99Umr20I+IKF8BT56yCe1UL7QJo2gcf2QQos3Mxp0=
+			</data>
+		</dict>
+		<key>SnapViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kbxRbPAI0vp7Z13gW/PtkN3RhV+tCI7z47VxfSOzbLE=
 			</data>
 		</dict>
 		<key>UIKitDynamicsViewController.nib</key>

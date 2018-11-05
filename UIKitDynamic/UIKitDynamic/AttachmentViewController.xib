@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AttachmentViewController">
+            <connections>
+                <outlet property="animationView1" destination="Ldj-He-S6t" id="Sgi-ab-hYh"/>
+                <outlet property="animationView2" destination="Xoj-0E-Nep" id="Ijm-Mn-PbZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-KC-jP5">
+                    <rect key="frame" x="112.66666666666669" y="148" width="150" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7VH-vY-IYC"/>
+                        <constraint firstAttribute="width" constant="150" id="e3C-2T-rwU"/>
+                    </constraints>
+                    <segments>
+                        <segment title="锚点吸附"/>
+                        <segment title="元素吸附"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentValueChanged:" destination="-1" eventType="valueChanged" id="RYv-Rw-iCK"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd3-YQ-WLW">
+                    <rect key="frame" x="162.66666666666666" y="74" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4g7-iP-zCP"/>
+                        <constraint firstAttribute="width" constant="50" id="xw4-1H-SD3"/>
+                    </constraints>
+                    <state key="normal" title="开始"/>
+                    <connections>
+                        <action selector="startAnimation:" destination="-1" eventType="touchUpInside" id="dak-nr-ho8"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ldj-He-S6t">
+                    <rect key="frame" x="162" y="300" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.1051755165" blue="0.1650896617" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xoj-0E-Nep">
+                    <rect key="frame" x="194" y="529" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.97817069290000003" green="0.92729109529999998" blue="0.37925776839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a1z-KC-jP5" firstAttribute="top" secondItem="Jd3-YQ-WLW" secondAttribute="bottom" constant="30" id="FhH-5Z-7Wf"/>
+                <constraint firstItem="Jd3-YQ-WLW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b7E-8a-Rkv"/>
+                <constraint firstItem="Jd3-YQ-WLW" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="bvP-V1-a9p"/>
+                <constraint firstItem="a1z-KC-jP5" firstAttribute="centerX" secondItem="Jd3-YQ-WLW" secondAttribute="centerX" id="saF-Mi-9JC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

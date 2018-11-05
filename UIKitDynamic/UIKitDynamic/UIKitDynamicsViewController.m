@@ -9,6 +9,9 @@
 #import "UIKitDynamicsViewController.h"
 #import "GravityViewController.h"
 #import "CollisionViewController.h"
+#import "AttachmentViewController.h"
+#import "SnapViewController.h"
+#import "PushViewController.h"
 
 @interface UIKitDynamicsViewController ()
 
@@ -67,6 +70,30 @@
             [self.navigationController pushViewController:collisionVC animated:YES];
         }
             break;
+        case 2:
+        {
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:@"UIKitDynamic"ofType:@"bundle"]];
+            AttachmentViewController *attachmentVC = [[AttachmentViewController alloc] initWithNibName:@"AttachmentViewController" bundle:resourceBundle];
+            attachmentVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:attachmentVC animated:YES];
+        }
+            break;
+        case 3:
+        {
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:@"UIKitDynamic"ofType:@"bundle"]];
+            SnapViewController *snapVC = [[SnapViewController alloc] initWithNibName:@"SnapViewController" bundle:resourceBundle];
+            snapVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:snapVC animated:YES];
+        }
+            break;
+        case 4:
+        {
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:@"UIKitDynamic"ofType:@"bundle"]];
+            PushViewController *pushVC = [[PushViewController alloc] initWithNibName:@"PushViewController" bundle:resourceBundle];
+            pushVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:pushVC animated:YES];
+            
+        }
             
         default:
             break;
