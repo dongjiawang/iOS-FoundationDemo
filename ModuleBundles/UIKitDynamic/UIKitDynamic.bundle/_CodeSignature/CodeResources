@@ -4,22 +4,33 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>GravityViewController.nib</key>
+		<data>
+		MLLRPW+Misgsr+XctEb9vhFQTU8=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		n9tcoiT8hnLcp0yXJXvPNxeY3ek=
+		</data>
 		<key>UIKitDynamicsViewController.nib</key>
 		<data>
-		5QrLoa3HpoMKtzhbWWKc7+a41Pw=
+		1OFqedx0PayJTsDlOU50Unwui44=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>UIKitDynamicsViewController.nib</key>
+		<key>GravityViewController.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5QrLoa3HpoMKtzhbWWKc7+a41Pw=
-			</data>
 			<key>hash2</key>
 			<data>
-			ZXj3qeWwp1ILBhuaZufrd34kfJXnYMUZX5hJ8+Z5mVk=
+			YZvrGJn/OK6U44CNN62nbTvz890FZ2YUT4CCDMpK8Cc=
+			</data>
+		</dict>
+		<key>UIKitDynamicsViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ykA8CuNFVLpPbF9NTDVQp7ESlC9ZW9sRmCZ9kakKSNs=
 			</data>
 		</dict>
 	</dict>

@@ -7,6 +7,7 @@
 //
 
 #import "UIKitDynamicsViewController.h"
+#import "GravityViewController.h"
 
 @interface UIKitDynamicsViewController ()
 
@@ -50,10 +51,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0:
-        {
-            //            UIKitDynamicsViewController *dynamicsVC = [[UIKitDynamicsViewController alloc] init];
-            //            dynamicsVC.title = self.tableArray[indexPath.row];
-            //            [self.navigationController pushViewController:dynamicsVC animated:YES];
+        {            
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:@"UIKitDynamic"ofType:@"bundle"]];
+            GravityViewController *gravityVC = [[GravityViewController alloc] initWithNibName:@"GravityViewController" bundle:resourceBundle];
+            gravityVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:gravityVC animated:YES];
         }
             break;
         case 1:

@@ -11,6 +11,9 @@
 		7C2EC509218C5F0000383DD3 /* UIKitDynamic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C2EC506218C5F0000383DD3 /* UIKitDynamic.h */; };
 		7C2EC512218C5F2E00383DD3 /* UIKitDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC510218C5F2E00383DD3 /* UIKitDynamicsViewController.m */; };
 		7C2EC51D218C5F4E00383DD3 /* UIKitDynamicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C2EC511218C5F2E00383DD3 /* UIKitDynamicsViewController.xib */; };
+		7C775DEC219038C500018F6E /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775DEA219038C500018F6E /* GravityViewController.m */; };
+		7C775DED219038C500018F6E /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775DEA219038C500018F6E /* GravityViewController.m */; };
+		7C775DEE219038C500018F6E /* GravityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C775DEB219038C500018F6E /* GravityViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +38,9 @@
 		7C2EC511218C5F2E00383DD3 /* UIKitDynamicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKitDynamicsViewController.xib; sourceTree = "<group>"; };
 		7C2EC517218C5F4600383DD3 /* UIKitDynamic.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitDynamic.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2EC519218C5F4600383DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C775DE9219038C500018F6E /* GravityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravityViewController.h; sourceTree = "<group>"; };
+		7C775DEA219038C500018F6E /* GravityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravityViewController.m; sourceTree = "<group>"; };
+		7C775DEB219038C500018F6E /* GravityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GravityViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 				7C2EC50F218C5F2E00383DD3 /* UIKitDynamicsViewController.h */,
 				7C2EC510218C5F2E00383DD3 /* UIKitDynamicsViewController.m */,
 				7C2EC511218C5F2E00383DD3 /* UIKitDynamicsViewController.xib */,
+				7C775DE9219038C500018F6E /* GravityViewController.h */,
+				7C775DEA219038C500018F6E /* GravityViewController.m */,
+				7C775DEB219038C500018F6E /* GravityViewController.xib */,
 			);
 			path = UIKitDynamic;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C2EC51D218C5F4E00383DD3 /* UIKitDynamicsViewController.xib in Resources */,
+				7C775DEE219038C500018F6E /* GravityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +214,7 @@
 			files = (
 				7C2EC508218C5F0000383DD3 /* UIKitDynamic.m in Sources */,
 				7C2EC512218C5F2E00383DD3 /* UIKitDynamicsViewController.m in Sources */,
+				7C775DEC219038C500018F6E /* GravityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C775DED219038C500018F6E /* GravityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
