@@ -14,6 +14,9 @@
 		7C775DEC219038C500018F6E /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775DEA219038C500018F6E /* GravityViewController.m */; };
 		7C775DED219038C500018F6E /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775DEA219038C500018F6E /* GravityViewController.m */; };
 		7C775DEE219038C500018F6E /* GravityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C775DEB219038C500018F6E /* GravityViewController.xib */; };
+		7C775DF2219041F100018F6E /* CollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775DF0219041F100018F6E /* CollisionViewController.m */; };
+		7C775DF3219041F100018F6E /* CollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775DF0219041F100018F6E /* CollisionViewController.m */; };
+		7C775DF4219041F100018F6E /* CollisionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C775DF1219041F100018F6E /* CollisionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,9 @@
 		7C775DE9219038C500018F6E /* GravityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GravityViewController.h; sourceTree = "<group>"; };
 		7C775DEA219038C500018F6E /* GravityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravityViewController.m; sourceTree = "<group>"; };
 		7C775DEB219038C500018F6E /* GravityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GravityViewController.xib; sourceTree = "<group>"; };
+		7C775DEF219041F100018F6E /* CollisionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollisionViewController.h; sourceTree = "<group>"; };
+		7C775DF0219041F100018F6E /* CollisionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollisionViewController.m; sourceTree = "<group>"; };
+		7C775DF1219041F100018F6E /* CollisionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollisionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 				7C775DE9219038C500018F6E /* GravityViewController.h */,
 				7C775DEA219038C500018F6E /* GravityViewController.m */,
 				7C775DEB219038C500018F6E /* GravityViewController.xib */,
+				7C775DEF219041F100018F6E /* CollisionViewController.h */,
+				7C775DF0219041F100018F6E /* CollisionViewController.m */,
+				7C775DF1219041F100018F6E /* CollisionViewController.xib */,
 			);
 			path = UIKitDynamic;
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 			files = (
 				7C2EC51D218C5F4E00383DD3 /* UIKitDynamicsViewController.xib in Resources */,
 				7C775DEE219038C500018F6E /* GravityViewController.xib in Resources */,
+				7C775DF4219041F100018F6E /* CollisionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +225,7 @@
 				7C2EC508218C5F0000383DD3 /* UIKitDynamic.m in Sources */,
 				7C2EC512218C5F2E00383DD3 /* UIKitDynamicsViewController.m in Sources */,
 				7C775DEC219038C500018F6E /* GravityViewController.m in Sources */,
+				7C775DF2219041F100018F6E /* CollisionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C775DED219038C500018F6E /* GravityViewController.m in Sources */,
+				7C775DF3219041F100018F6E /* CollisionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

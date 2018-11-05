@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollisionViewController">
+            <connections>
+                <outlet property="animation1" destination="u7J-Jd-f87" id="P2A-4K-eUp"/>
+                <outlet property="animation2" destination="RJc-LI-CKH" id="W7n-yJ-oSp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7J-Jd-f87">
+                    <rect key="frame" x="182" y="218" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.1051755165" blue="0.1650896617" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6a9-bp-QQn"/>
+                        <constraint firstAttribute="width" constant="50" id="nLP-jg-s5y"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJc-LI-CKH">
+                    <rect key="frame" x="214" y="658" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.97817069290000003" green="0.92729109529999998" blue="0.37925776839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PsU-oI-Kot"/>
+                        <constraint firstAttribute="width" constant="50" id="jFn-ou-zjo"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4s-DQ-fCN">
+                    <rect key="frame" x="182" y="74" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3iW-T7-e9F"/>
+                        <constraint firstAttribute="width" constant="50" id="80g-nr-Ev4"/>
+                    </constraints>
+                    <state key="normal" title="开始"/>
+                    <connections>
+                        <action selector="startAnimation:" destination="-1" eventType="touchUpInside" id="wrN-RH-Cso"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7GY-RR-kVZ">
+                    <rect key="frame" x="132" y="138" width="150" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="oA9-Uw-Jsf"/>
+                        <constraint firstAttribute="width" constant="150" id="rRU-zT-61p"/>
+                    </constraints>
+                    <segments>
+                        <segment title="边界碰撞"/>
+                        <segment title="物体碰撞"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentValueChange:" destination="-1" eventType="valueChanged" id="nww-AZ-Mdp"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J4s-DQ-fCN" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="ChJ-35-UHs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="RJc-LI-CKH" secondAttribute="bottom" constant="154" id="YGF-ne-qcY"/>
+                <constraint firstItem="7GY-RR-kVZ" firstAttribute="centerX" secondItem="J4s-DQ-fCN" secondAttribute="centerX" id="aka-yh-3bE"/>
+                <constraint firstItem="J4s-DQ-fCN" firstAttribute="centerX" secondItem="u7J-Jd-f87" secondAttribute="centerX" id="buI-Op-jE0"/>
+                <constraint firstItem="7GY-RR-kVZ" firstAttribute="top" secondItem="J4s-DQ-fCN" secondAttribute="bottom" constant="20" id="cBd-w4-GZu"/>
+                <constraint firstItem="u7J-Jd-f87" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="182" id="fX7-YJ-RfV"/>
+                <constraint firstItem="RJc-LI-CKH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="214" id="i7u-QK-6AY"/>
+                <constraint firstItem="J4s-DQ-fCN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rcL-G9-NoX"/>
+                <constraint firstItem="u7J-Jd-f87" firstAttribute="top" secondItem="7GY-RR-kVZ" secondAttribute="bottom" constant="50" id="vcO-Hr-uIM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>

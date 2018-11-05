@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CollisionViewController.nib</key>
+		<data>
+		humH9PBEhEtTGle6K+I/R+ONtyo=
+		</data>
 		<key>GravityViewController.nib</key>
 		<data>
-		MLLRPW+Misgsr+XctEb9vhFQTU8=
+		Cjcof7lFLmbEEIXHLRjeDMKnoHI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -19,11 +23,18 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CollisionViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AhetJWlh5d+hkD9e3VlgDDp78R695uCoVPi028hNcNk=
+			</data>
+		</dict>
 		<key>GravityViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YZvrGJn/OK6U44CNN62nbTvz890FZ2YUT4CCDMpK8Cc=
+			u/N0qzJWNKu196YScnbgbzmtdy8oNIDhkWztsggZm1k=
 			</data>
 		</dict>
 		<key>UIKitDynamicsViewController.nib</key>

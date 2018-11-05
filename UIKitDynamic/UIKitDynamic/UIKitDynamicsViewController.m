@@ -8,6 +8,7 @@
 
 #import "UIKitDynamicsViewController.h"
 #import "GravityViewController.h"
+#import "CollisionViewController.h"
 
 @interface UIKitDynamicsViewController ()
 
@@ -60,9 +61,10 @@
             break;
         case 1:
         {
-            //            UIkitLocationViewController *locationVC = [[UIkitLocationViewController alloc] init];
-            //            locationVC.title = self.tableArray[indexPath.row];
-            //            [self.navigationController pushViewController:locationVC animated:YES];
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:@"UIKitDynamic"ofType:@"bundle"]];
+            CollisionViewController *collisionVC = [[CollisionViewController alloc] initWithNibName:@"CollisionViewController" bundle:resourceBundle];
+            collisionVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:collisionVC animated:YES];
         }
             break;
             
