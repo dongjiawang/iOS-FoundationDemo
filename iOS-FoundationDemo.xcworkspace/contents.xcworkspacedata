@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LocationAndMap/LocationAndMap.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIKitDynamic/UIKitDynamic.xcodeproj">
    </FileRef>
    <FileRef
