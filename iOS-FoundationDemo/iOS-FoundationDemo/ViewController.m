@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <UIKitDynamic/UIKitDynamicsViewController.h>
+#import <LocationAndMap/LocationAndMapViewController.h>
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -51,7 +52,7 @@
     switch (indexPath.row) {
         case 0:
         {            
-            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:@"UIKitDynamic"ofType:@"bundle"]];
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"UIKitDynamic"ofType:@"bundle"]];
             UIKitDynamicsViewController *dynamicsVC = [[UIKitDynamicsViewController alloc] initWithNibName:@"UIKitDynamicsViewController" bundle:resourceBundle];
             dynamicsVC.title = self.tableArray[indexPath.row];
             [self.navigationController pushViewController:dynamicsVC animated:YES];
@@ -59,9 +60,10 @@
             break;
         case 1:
         {
-//            UIkitLocationViewController *locationVC = [[UIkitLocationViewController alloc] init];
-//            locationVC.title = self.tableArray[indexPath.row];
-//            [self.navigationController pushViewController:locationVC animated:YES];
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"LocationAndMap"ofType:@"bundle"]];
+            LocationAndMapViewController *locationVC = [[LocationAndMapViewController alloc] initWithNibName:@"LocationAndMapViewController" bundle:resourceBundle];
+            locationVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:locationVC animated:YES];
         }
             break;
             

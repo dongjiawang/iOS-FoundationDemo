@@ -17,6 +17,8 @@
 		7C2EC4C7218C418100383DD3 /* CommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C2EC4C5218C418100383DD3 /* CommonTableViewCell.xib */; };
 		7C2EC520218C60AC00383DD3 /* libUIKitDynamic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2EC51F218C60AC00383DD3 /* libUIKitDynamic.a */; };
 		7C2EC524218C611100383DD3 /* UIKitDynamic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C2EC523218C611100383DD3 /* UIKitDynamic.bundle */; };
+		7C775E5A2191434900018F6E /* LocationAndMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C775E592191434900018F6E /* LocationAndMap.bundle */; };
+		7C775E622191437600018F6E /* libLocationAndMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C775E612191437600018F6E /* libLocationAndMap.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		7C2EC4C5218C418100383DD3 /* CommonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTableViewCell.xib; sourceTree = "<group>"; };
 		7C2EC51F218C60AC00383DD3 /* libUIKitDynamic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUIKitDynamic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2EC523218C611100383DD3 /* UIKitDynamic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UIKitDynamic.bundle; sourceTree = "<group>"; };
+		7C775E592191434900018F6E /* LocationAndMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LocationAndMap.bundle; sourceTree = "<group>"; };
+		7C775E612191437600018F6E /* libLocationAndMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLocationAndMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C775E622191437600018F6E /* libLocationAndMap.a in Frameworks */,
 				7C2EC520218C60AC00383DD3 /* libUIKitDynamic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +94,7 @@
 		7C2EC4CC218C479600383DD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C775E612191437600018F6E /* libLocationAndMap.a */,
 				7C2EC51F218C60AC00383DD3 /* libUIKitDynamic.a */,
 			);
 			name = Frameworks;
@@ -97,6 +103,7 @@
 		7C2EC521218C611100383DD3 /* ModuleBundles */ = {
 			isa = PBXGroup;
 			children = (
+				7C775E582191434900018F6E /* LocationAndMap */,
 				7C2EC522218C611100383DD3 /* UIKitDynamic */,
 			);
 			name = ModuleBundles;
@@ -109,6 +116,14 @@
 				7C2EC523218C611100383DD3 /* UIKitDynamic.bundle */,
 			);
 			path = UIKitDynamic;
+			sourceTree = "<group>";
+		};
+		7C775E582191434900018F6E /* LocationAndMap */ = {
+			isa = PBXGroup;
+			children = (
+				7C775E592191434900018F6E /* LocationAndMap.bundle */,
+			);
+			path = LocationAndMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +186,7 @@
 				7C2EC4C7218C418100383DD3 /* CommonTableViewCell.xib in Resources */,
 				7C2EC4A3218C3C3600383DD3 /* LaunchScreen.storyboard in Resources */,
 				7C2EC524218C611100383DD3 /* UIKitDynamic.bundle in Resources */,
+				7C775E5A2191434900018F6E /* LocationAndMap.bundle in Resources */,
 				7C2EC4A0218C3C3600383DD3 /* Assets.xcassets in Resources */,
 				7C2EC49E218C3C3500383DD3 /* Main.storyboard in Resources */,
 			);
@@ -331,7 +347,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEVELOPMENT_TEAM = 55L89582PS;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../UIKitDynamic\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../UIKitDynamic\"",
+					"\"$(SRCROOT)/../LocationAndMap\"",
+				);
 				INFOPLIST_FILE = "iOS-FoundationDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,7 +371,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEVELOPMENT_TEAM = 55L89582PS;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../UIKitDynamic\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../UIKitDynamic\"",
+					"\"$(SRCROOT)/../LocationAndMap\"",
+				);
 				INFOPLIST_FILE = "iOS-FoundationDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

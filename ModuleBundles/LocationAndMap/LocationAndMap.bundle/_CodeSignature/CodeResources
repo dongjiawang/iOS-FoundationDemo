@@ -4,77 +4,22 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AttachmentViewController.nib</key>
-		<data>
-		/6Z1dQxi+QD7rfCM10bqcaDQ7lU=
-		</data>
-		<key>CollisionViewController.nib</key>
-		<data>
-		T0Libd4p6uv08iUnBLkB1USNX24=
-		</data>
-		<key>GravityViewController.nib</key>
-		<data>
-		TvI/IUxLKLJOWZM7ryQe6+R4SVU=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		n9tcoiT8hnLcp0yXJXvPNxeY3ek=
+		mpxpbhY9wFPBqLvqrU/AdkYKaH0=
 		</data>
-		<key>PushViewController.nib</key>
+		<key>LocationAndMapViewController.nib</key>
 		<data>
-		NMHSqfiUInEUnbs+JsmJ3pFEGbI=
-		</data>
-		<key>SnapViewController.nib</key>
-		<data>
-		Nf0NylKpJNpR4gsq1qpHIulrkAk=
-		</data>
-		<key>UIKitDynamicsViewController.nib</key>
-		<data>
-		bHyoYs6oqZRn1BAVEHgQg7EWaJg=
+		weXCAH7VuXEmqS3gNmmaxdOLFys=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AttachmentViewController.nib</key>
+		<key>LocationAndMapViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V1TAYvJ6avcWlsmxZE4Wq0PPhZKCAZGgNgUjATINPBY=
-			</data>
-		</dict>
-		<key>CollisionViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KuzggAWBfAVAWeVLrYK25QTnH7P7MiCwC5gN8SMtmC8=
-			</data>
-		</dict>
-		<key>GravityViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			g8PcK39lx8qdhzaggPR8vgN0uBhxd+QLINZ4aIbOBuc=
-			</data>
-		</dict>
-		<key>PushViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dFjS+Fo1I4uYI06bu8/ddeiRo3LSww7TOuVgTzvxKus=
-			</data>
-		</dict>
-		<key>SnapViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vfPs0+QzFUoF+pQZtL/Mlor1TpEDOrRBfzYVj2GxgDA=
-			</data>
-		</dict>
-		<key>UIKitDynamicsViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8ZkmjExUZcNjKMwJ8gRz0IQ4ccLoZMcDMVTuvvEEOnw=
+			tRfsMUjacso5tmpF9ZTCSrArvsG6Z0kDL2zrBN5DOJE=
 			</data>
 		</dict>
 	</dict>
