@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationMapViewController">
+            <connections>
+                <outlet property="mapView" destination="XCH-ue-EwX" id="rBM-BE-OmK"/>
+                <outlet property="tableView" destination="aat-UN-rwb" id="fzt-jv-wEw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XCH-ue-EwX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="702"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="cH0-TD-urj"/>
+                    </connections>
+                </mapView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dak-Pj-nLA">
+                    <rect key="frame" x="82" y="64" width="250" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="0CI-OM-8Uw"/>
+                        <constraint firstAttribute="height" constant="30" id="pNe-sK-ELL"/>
+                    </constraints>
+                    <segments>
+                        <segment title="standart"/>
+                        <segment title="satellite"/>
+                        <segment title="hybrid"/>
+                    </segments>
+                    <connections>
+                        <action selector="mapTypesSelectionChanged:" destination="-1" eventType="valueChanged" id="RT0-YR-Pyw"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aat-UN-rwb">
+                    <rect key="frame" x="0.0" y="746" width="414" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gBw-64-q7d"/>
+                        <outlet property="delegate" destination="-1" id="9CB-0Z-5TV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aat-UN-rwb" secondAttribute="bottom" id="3oT-Pt-PhT"/>
+                <constraint firstItem="XCH-ue-EwX" firstAttribute="leading" secondItem="aat-UN-rwb" secondAttribute="leading" id="DBN-pi-tBz"/>
+                <constraint firstItem="XCH-ue-EwX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="LtY-NB-aVb"/>
+                <constraint firstItem="dak-Pj-nLA" firstAttribute="centerX" secondItem="XCH-ue-EwX" secondAttribute="centerX" id="Phc-Ho-feX"/>
+                <constraint firstItem="dak-Pj-nLA" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="Tn9-ZE-l59"/>
+                <constraint firstItem="aat-UN-rwb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="VjP-iY-XF7"/>
+                <constraint firstItem="aat-UN-rwb" firstAttribute="top" secondItem="XCH-ue-EwX" secondAttribute="bottom" id="dVN-tE-2eb"/>
+                <constraint firstAttribute="bottom" secondItem="XCH-ue-EwX" secondAttribute="bottom" constant="150" id="jOa-xe-4ha"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="aat-UN-rwb" secondAttribute="trailing" id="qM6-nz-7WV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="XCH-ue-EwX" secondAttribute="trailing" id="vii-kh-Oso"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="130.43478260869566" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

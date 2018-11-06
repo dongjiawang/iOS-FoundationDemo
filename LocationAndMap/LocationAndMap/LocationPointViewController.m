@@ -126,7 +126,8 @@
      > speed         : 当前速度
      > course        : 航向(设备移动的方向, 值域范围:0.0 ~ 259.9, 正北方向为0.0)
      */
-    CLLocation *location = locations.firstObject;
+    // 最后一组数据是最新的位置
+    CLLocation *location = locations.lastObject;
     [self reverseGeocodeLocation:location];
     CLLocationCoordinate2D coordinate = location.coordinate;
     self.longitude.text = [NSString stringWithFormat:@"经度：%f", coordinate.longitude];
@@ -135,7 +136,7 @@
 
 // 获取位置失败
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    
+    [self.locationManger stopUpdatingLocation];
 }
 
 @end

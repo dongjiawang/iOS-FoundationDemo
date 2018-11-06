@@ -15,6 +15,9 @@
 		7C775E68219160D300018F6E /* LocationPointViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C775E65219160D300018F6E /* LocationPointViewController.xib */; };
 		7C775E6B219164E500018F6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C775E6A219164E500018F6E /* CoreLocation.framework */; };
 		7C775E6D219164EB00018F6E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C775E6C219164EB00018F6E /* MapKit.framework */; };
+		7C775E712191785100018F6E /* LocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775E6F2191785100018F6E /* LocationMapViewController.m */; };
+		7C775E722191785100018F6E /* LocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C775E6F2191785100018F6E /* LocationMapViewController.m */; };
+		7C775E732191785100018F6E /* LocationMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C775E702191785100018F6E /* LocationMapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,9 @@
 		7C775E65219160D300018F6E /* LocationPointViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPointViewController.xib; sourceTree = "<group>"; };
 		7C775E6A219164E500018F6E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7C775E6C219164EB00018F6E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7C775E6E2191785100018F6E /* LocationMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationMapViewController.h; sourceTree = "<group>"; };
+		7C775E6F2191785100018F6E /* LocationMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationMapViewController.m; sourceTree = "<group>"; };
+		7C775E702191785100018F6E /* LocationMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationMapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,9 @@
 				7C775E63219160D300018F6E /* LocationPointViewController.h */,
 				7C775E64219160D300018F6E /* LocationPointViewController.m */,
 				7C775E65219160D300018F6E /* LocationPointViewController.xib */,
+				7C775E6E2191785100018F6E /* LocationMapViewController.h */,
+				7C775E6F2191785100018F6E /* LocationMapViewController.m */,
+				7C775E702191785100018F6E /* LocationMapViewController.xib */,
 			);
 			path = LocationAndMap;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C775E68219160D300018F6E /* LocationPointViewController.xib in Resources */,
+				7C775E732191785100018F6E /* LocationMapViewController.xib in Resources */,
 				7C775E602191436B00018F6E /* LocationAndMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +234,7 @@
 			files = (
 				7C775E66219160D300018F6E /* LocationPointViewController.m in Sources */,
 				7C775E5E2191436B00018F6E /* LocationAndMapViewController.m in Sources */,
+				7C775E712191785100018F6E /* LocationMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +244,7 @@
 			files = (
 				7C775E67219160D300018F6E /* LocationPointViewController.m in Sources */,
 				7C775E5F2191436B00018F6E /* LocationAndMapViewController.m in Sources */,
+				7C775E722191785100018F6E /* LocationMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
