@@ -7,8 +7,9 @@
 //
 
 #import "LocationAndMapViewController.h"
+#import "LocationPointViewController.h"
 
-@interface LocationAndMapViewController ()
+@interface LocationAndMapViewController ()<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSMutableArray *tableArray;
@@ -45,6 +46,22 @@
     cell.textLabel.text = self.tableArray[indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0:
+        {
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:@"LocationAndMap"ofType:@"bundle"]];
+            LocationPointViewController *pointVC = [[LocationPointViewController alloc] initWithNibName:@"LocationPointViewController" bundle:resourceBundle];
+            pointVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:pointVC animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

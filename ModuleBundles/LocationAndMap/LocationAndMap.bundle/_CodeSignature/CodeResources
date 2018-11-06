@@ -12,6 +12,10 @@
 		<data>
 		weXCAH7VuXEmqS3gNmmaxdOLFys=
 		</data>
+		<key>LocationPointViewController.nib</key>
+		<data>
+		Y6dv+G40vnJ8P+dGt99MgurTH84=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -20,6 +24,13 @@
 			<key>hash2</key>
 			<data>
 			tRfsMUjacso5tmpF9ZTCSrArvsG6Z0kDL2zrBN5DOJE=
+			</data>
+		</dict>
+		<key>LocationPointViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2p5tpxirF0L1uTdMJdb4FAHocmOieIXct/FTTw2S+Lo=
 			</data>
 		</dict>
 	</dict>
