@@ -54,7 +54,7 @@
     self.mapView.showsCompass = YES;
     // 比例尺
     self.mapView.showsScale = YES;
-    // 显示s用户位置
+    // 显示用户位置
     self.mapView.showsUserLocation = YES;
     // 禁止旋转
     self.mapView.rotateEnabled = NO;
@@ -64,7 +64,6 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"CommonTableViewCell" bundle:nil] forCellReuseIdentifier:@"CommonTableViewCell"];
 }
-
 
 - (IBAction)mapTypesSelectionChanged:(UISegmentedControl *)sender {
     switch (sender.selectedSegmentIndex) {

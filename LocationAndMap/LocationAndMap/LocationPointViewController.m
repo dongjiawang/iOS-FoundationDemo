@@ -77,7 +77,7 @@
         // 包含区，街道等信息的地标对象
         if (error == nil) {
             CLPlacemark *placemark = [placemarks firstObject];
-            self.address.text = [NSString stringWithFormat:@"地址：%@%@%@%@", placemark.addressDictionary[@"State"], placemark.addressDictionary[@"City"], placemark.addressDictionary[@"SubLocality"], placemark.addressDictionary[@"Name"]];
+            self.address.text = [NSString stringWithFormat:@"地址：%@%@%@%@", placemark.administrativeArea, placemark.locality, placemark.subLocality, placemark.name];
         }
         else {
             self.address.text = @"暂时还未解析出来地址";

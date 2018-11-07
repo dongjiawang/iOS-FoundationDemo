@@ -9,6 +9,7 @@
 #import "LocationAndMapViewController.h"
 #import "LocationPointViewController.h"
 #import "LocationMapViewController.h"
+#import "LocationNavitionViewController.h"
 
 @interface LocationAndMapViewController ()<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -23,7 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.tableArray = [NSMutableArray arrayWithObjects:@"获取位置", @"显示地图", nil];
+    self.tableArray = [NSMutableArray arrayWithObjects:@"获取位置", @"显示地图", @"路径规划", nil];
     [self.tableView registerNib:[UINib nibWithNibName:@"CommonTableViewCell" bundle:nil] forCellReuseIdentifier:@"CommonTableViewCell"];
 }
 
@@ -64,6 +65,13 @@
             LocationMapViewController *mapVC = [[LocationMapViewController alloc] initWithNibName:@"LocationMapViewController" bundle:resourceBundle];
             mapVC.title = self.tableArray[indexPath.row];
             [self.navigationController pushViewController:mapVC animated:YES];
+        }
+            break;
+        case 2:
+        {
+            LocationNavitionViewController *navVC = [[LocationNavitionViewController alloc] initWithNibName:@"LocationNavitionViewController" bundle:resourceBundle];
+            navVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:navVC animated:YES];
         }
             break;
             

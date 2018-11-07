@@ -16,6 +16,10 @@
 		<data>
 		HKOAYc7WDTl2WxkslxWmT+IPLGs=
 		</data>
+		<key>LocationNavitionViewController.nib</key>
+		<data>
+		xBL44H5j3f+jJD60+fZi+lwEL7U=
+		</data>
 		<key>LocationPointViewController.nib</key>
 		<data>
 		Y6dv+G40vnJ8P+dGt99MgurTH84=
@@ -35,6 +39,13 @@
 			<key>hash2</key>
 			<data>
 			IMjHuqKa4CFWqGYifbxqnsDRwr4u0fvN7Vl9MK2/Ofk=
+			</data>
+		</dict>
+		<key>LocationNavitionViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/rpzKBjbND6oEnKyu4mMV5CEil1pr4mex8AVeY+IUf0=
 			</data>
 		</dict>
 		<key>LocationPointViewController.nib</key>
