@@ -130,12 +130,15 @@
     request.destination = to;
     switch (self.navType) {
         case 0:
+            // 步行
             request.transportType = MKDirectionsTransportTypeWalking;
             break;
         case 1:
+            // 驾驶
             request.transportType = MKDirectionsTransportTypeAutomobile;
             break;
         case 2:
+            // 公交
             request.transportType = MKDirectionsTransportTypeAny;
             break;
         default:

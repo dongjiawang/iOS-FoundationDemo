@@ -27,5 +27,17 @@
 1. 自定义大头针。
 1. 点击大头针可以添加遮盖。
 
+### 路径规划
+
+简单的获取两个地点之间的路径（步行、驾驶、公交）。
+
+没有过滤地点，可以在获取到地理编码后的地址中筛选正确的地址然后再进行路线规划。
+
+在下面的方法中获取解析出来的地理编码，返回的数组中筛选。
+
+```objective-c
+- (void)geocodeAddressString:(NSString *)addressString completionHandler:(CLGeocodeCompletionHandler)completionHandler;
+```
+
 
 
