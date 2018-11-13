@@ -76,6 +76,34 @@
                ReferencedContainer = "container:../UIKitDynamic/UIKitDynamic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7C775E842192E8C800018F6E"
+               BuildableName = "libJSONSerialization.a"
+               BlueprintName = "JSONSerialization"
+               ReferencedContainer = "container:../JSONSerialization/JSONSerialization.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7C4897852192E91A007CB688"
+               BuildableName = "JSONSerialization.bundle"
+               BlueprintName = "JSONSerializationBundle"
+               ReferencedContainer = "container:../JSONSerialization/JSONSerialization.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

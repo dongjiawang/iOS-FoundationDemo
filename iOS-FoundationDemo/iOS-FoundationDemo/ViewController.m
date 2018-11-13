@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <UIKitDynamic/UIKitDynamicsViewController.h>
 #import <LocationAndMap/LocationAndMapViewController.h>
+#import <JSONSerialization/JSONSerializationViewController.h>
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.tableArray = [NSMutableArray arrayWithObjects:@"UIKit Dynamics", @"Core Location",nil];
+    self.tableArray = [NSMutableArray arrayWithObjects:@"UIKit Dynamics", @"Core Location", @"JSON的解析和使用",nil];
     [self.tableView registerNib:[UINib nibWithNibName:@"CommonTableViewCell" bundle:nil] forCellReuseIdentifier:@"CommonTableViewCell"];
 }
 
@@ -64,6 +65,15 @@
             LocationAndMapViewController *locationVC = [[LocationAndMapViewController alloc] initWithNibName:@"LocationAndMapViewController" bundle:resourceBundle];
             locationVC.title = self.tableArray[indexPath.row];
             [self.navigationController pushViewController:locationVC animated:YES];
+        }
+            break;
+        case 2:
+        {
+            NSBundle *resourceBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"JSONSerialization"ofType:@"bundle"]];
+            JSONSerializationViewController *jsonVC = [[JSONSerializationViewController alloc] initWithNibName:@"JSONSerializationViewController" bundle:resourceBundle];
+            jsonVC.title = self.tableArray[indexPath.row];
+            [self.navigationController pushViewController:jsonVC animated:YES];
+            
         }
             break;
             
